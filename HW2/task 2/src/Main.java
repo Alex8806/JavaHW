@@ -17,6 +17,7 @@ public class Main {
             byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
             os.write(bytes);
             os.flush();
+            if
         }
     }
 }
