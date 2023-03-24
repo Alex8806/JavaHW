@@ -33,8 +33,15 @@ public class Main {
         System.out.println(persons);
         System.out.println();
         for (Person p : persons
-             ) {
+        ) {
             p.personIsMore20();
+        }
+        System.out.println();
+        for (Person p : persons
+        ) {
+            if (p.getAge() > 20) {
+                System.out.println(p);
+            }
         }
         System.out.println();
         person5.changeStatus();

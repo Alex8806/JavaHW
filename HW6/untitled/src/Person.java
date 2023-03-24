@@ -50,7 +50,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("name -" + name + " || surname -" + surname + " || sex- " + sex + " || married status - " + marriedStatus + " || age - " + age + " || citizenShip - " + citizenShip + "\n");
+        return String.format("name - " + name + " || surname - " + surname + " || sex- " + sex + " || married status - " + marriedStatus + " || age - " + age + " || citizenShip - " + citizenShip + "\n");
     }
 
     @Override
@@ -72,12 +72,12 @@ public class Person {
 
     public void personIsMore20() {
         if (age >= 20) {
-            System.out.println("name -" + name + " || surname -" + surname + " || age - " + age + " Is more than 20");
+            System.out.println("name - " + name + " || surname - " + surname + " || age - " + age + " Is more than 20");
         }
     }
 
     public void changeStatus() {
-        System.out.println("name -" + name + " || surname -" + surname + " || married status - " + marriedStatus);
+        System.out.println("name - " + name + " || surname - " + surname + " || married status - " + marriedStatus);
         Map<Integer, String> marStatus = new HashMap<>();
         marStatus.put(1, "single");
         marStatus.put(2, "married");
@@ -103,18 +103,18 @@ public class Person {
             return false;
         } else if (marriedStatus == "married" || otherPerson.marriedStatus == "married") {
             if (marriedStatus == "married") {
-                System.out.println("name -" + name + " || surname -" + surname + " already married!");
+                System.out.println("name - " + name + " || surname - " + surname + " already married!");
             }
             if (otherPerson.marriedStatus == "married") {
-                System.out.println("name -" + otherPerson.name + " || surname -" + otherPerson.surname + " already married!");
+                System.out.println("name - " + otherPerson.name + " || surname - " + otherPerson.surname + " already married!");
             }
             return false;
         } else if (age < 18 || otherPerson.age < 18) {
             if (age < 18) {
-                System.out.println("name -" + name + " || surname -" + surname + " is to young!");
+                System.out.println("name - " + name + " || surname - " + surname + " is to young!");
             }
             if (otherPerson.age < 18) {
-                System.out.println("name -" + otherPerson.name + " || surname -" + otherPerson.surname + " is to young!");
+                System.out.println("name - " + otherPerson.name + " || surname - " + otherPerson.surname + " is to young!");
             }
             return false;
         }
